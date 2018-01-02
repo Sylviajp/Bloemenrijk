@@ -1,0 +1,752 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Varela Round', sans-serif;
+	overflow-x: hidden;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #93b662;
+}
+
+header {
+	display: flex;
+
+	width: 100%;
+	height: 100vh;
+	background: url("geranium-1.jpg") no-repeat 50% 50%;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+	z-index: 0;
+}
+
+nav {
+	width: 100%;
+	height: 60px;
+}
+
+.navMenu {
+	margin-left: 0%;
+}
+
+header nav.navMenu {
+	width: 100%;
+	margin-right: 0px;
+	line-height: 2px;
+
+	text-align: center;
+	overflow: hidden;
+	list-style: none;
+
+}
+
+header ul li {
+	display: inline-block;
+
+}
+
+header nav.navMenu ul {
+	color: #000;
+	text-align: center;
+
+}
+
+.navMenu li {
+	background-color: #b87a99;
+	border-bottom: 1px solid lichtgrey;
+	text-align: center;
+
+}
+
+.navMenu li:last-child {
+	border-bottom: none;
+}
+
+.navMenu li a {
+	display: block;
+	height: 50px;
+	color: black;
+	padding: 15px;
+	top: 0;
+	font-size: 2em;
+	font-weight: 800;
+
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+
+header nav.navMenu ul,
+header nav.navMenu ul {}
+
+.navMenu li a:hover,
+.navMenu li a:active {
+	width: 100%;
+	position: relative;
+	background-color: #d2acbf;
+}
+
+.hamburger {
+
+	position: absolute;
+	box-sizing: border-box;
+	right: 0.5em;
+	top: 0.5em;
+	color: black;
+	font-size: 3em;
+	font-weight: bold;
+	text-decoration: none;
+	z-index: 2;
+
+}
+
+.hamburger:before {
+	content: '\2630';
+}
+
+.menu-trigger {
+	display: none;
+}
+
+.slide h1 {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	z-index: -1;
+	font-size: 3rem;
+
+}
+
+.slide h2 {
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	z-index: -1;
+	font-size: 2.3rem;
+	font-weight: 600;
+}
+
+#bloem img {
+
+	height: 50%;
+	position: fixed;
+	bottom: 5%;
+	right: 0;
+	margin-left: 42%;
+	z-index: 2;
+	animation: podmuch 2s ease-in-out infinite;
+	animation-direction: alternate, normal;
+	transform-origin: 100% 100%;
+}
+
+.arrow {
+	width: 30px;
+	height: 30px;
+	border: 2px solid black;
+	position: absolute;
+	bottom: 1%;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 50%;
+	font-size: 3.3rem;
+	text-align: center;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.fa-angle-down {
+	animation: arrow 1.6s infinite linear;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	margin-top: 100vh;
+	position: relative;
+	background-color: #EDD4FC;
+}
+
+
+
+.main h3 {
+	text-align: center;
+	padding: 2%;
+	font-size: 2em;
+	border-bottom: 1px solid #fff;
+
+}
+
+.main p {
+	padding: 2% 3%;
+	font-size: 1em;
+
+}
+
+.main img {
+	box-shadow: 3px 3px 5px grey;
+}
+
+.toUp {
+	position: absolute;
+	bottom: 2%;
+	right: 5%;
+	transform: translate(-50%);
+	font-size: 2em;
+}
+
+
+
+.assort {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-color: #EDD4FC;
+}
+
+.assort h3 {
+	width: 100%;
+	text-align: center;
+	font-size: 2em;
+	top: 0;
+}
+
+#kafelki {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	margin: auto;
+
+}
+
+.offerte {
+
+	max-width: 270px;
+	height: 455px;
+	padding: 5px;
+	margin-top: 5%;
+	margin: auto;
+	justify-content: space-around;
+	border: 1px solid #fff;
+	box-shadow: 2px 3px 5px grey;
+
+}
+
+.offerte h4 {
+	text-align: center;
+	font-size: 1.5em;
+	padding: 5px;
+}
+
+
+
+.offerte p {
+	margin-top: 5px;
+	margin-left: 2%;
+	padding: 7px;
+	text-align: inherit;
+	font-size: 1.1em;
+}
+
+.offerte a {
+	text-decoration: none;
+	color: #000;
+}
+
+.assort a:hover,
+.assort a:link {
+	color: #6A4670;
+}
+
+
+
+#contact {
+	margin-top: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact h3 {
+	width: 100%;
+	margin-bottom: 1.5%;
+}
+
+#groepContact {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: 5%;
+}
+
+
+
+#groepContact p {
+	width: auto;
+	margin-left: 0;
+	padding: 0;
+	font-size: 1.2em;
+	border: none;
+}
+
+#contactData {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	font-size: 1.2em;
+	font-weight: 600;
+	margin-left: 5%;
+	border-bottom: 0;
+}
+
+#contactData form {
+	width: 40%;
+	height: 80%;
+	margin-top: 3%;
+	margin-left: 0;
+	font-size: 1.2em;
+	font-weight: 600;
+
+}
+
+input {
+	height: 25px;
+	width: 300px;
+	margin-top: 2%;
+	border-radius: 8px;
+}
+
+textarea {
+	width: 300px;
+	height: 130px;
+	border-radius: 8px;
+}
+
+aside {
+	margin-top: 0;
+	height: auto;
+	margin-left: 5%;
+}
+
+aside iframe {
+	width: 100%;
+	height: 60%;
+	border: 2px solid #77318F;
+	justify-content: center;
+}
+
+aside .fa {
+	font-size: 4em;
+	padding: 3%;
+	margin-top: 5%;
+}
+
+
+#gaToHome a {
+	width: 5%;
+	margin-left: 47%;
+	font-size: 2em;
+	z-index: 1;
+
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	margin-top: 0;
+	background-color: #EDD4FC;
+	width: 100%;
+	height: 2%;
+	padding: 0.5%;
+	font-size: 1.2em;
+	text-align: center;
+	z-index: 1;
+	border-top: 1px solid #fff;
+
+}
+
+footer p {
+	width: 100%;
+}
+
+
+
+/* media */
+
+@media (max-width: 740px) {
+	header nav.navMenu {
+		width: 100%;
+	}
+	nav {
+		width: 100%;
+	}
+	.navMenu {
+		display: none;
+		width: 100%;
+		z-index: 100;
+		margin-top: 30%;
+
+
+	}
+	.navMenu li {
+		width: 100%;
+		border-bottom: 1px solid #dbbdcc;
+		z-index: 999;
+	}
+	.menu-trigger {
+		display: block;
+	}
+
+	.nav-expanded {
+		display: block;
+
+	}
+
+	#bloem img {
+		bottom: 15%;
+		z-index: -1;
+	}
+	.arrow {
+		display: none;
+	}
+	.main h3 {
+		padding: 4%;
+		font-size: 2em;
+		border-bottom: 1px solid #fff;
+	}
+	.main p {
+
+		font-size: 1.3em;
+		padding: 20px;
+		text-align: center;
+		border-bottom: 1px solid #fff;
+
+	}
+
+	.main aside img {
+		display: flex;
+		width: 100%;
+
+	}
+	.main2 {
+		width: 100%;
+		height: 100vh;
+	}
+	.assort {
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+	#kafelki {
+		flex-direction: column;
+		margin-top: 5%;
+		height: auto;
+	}
+	.offerte {
+		margin-top: 1%;
+	}
+	.grow img {
+		margin-left: 1.5%;
+		box-shadow: 2px 3px 5px grey;
+	}
+	.main#contact h3 {
+		margin-top: 5%;
+
+	}
+	#groepContact {
+		width: 100%;
+		flex-direction: column;
+
+	}
+	#groepContact p {
+		width: 100%;
+		margin-top: 2%;
+		margin-bottom: 5%;
+		padding: 2%;
+	}
+	#contactData {
+		width: 100%;
+		margin-left: 5%;
+		text-align: left;
+	}
+	aside {
+		width: 80%;
+		margin: auto;
+	}
+	aside div {
+		width: 90%;
+		display: flex;
+
+		font-stretch: semi-condensed;
+		text-align: center;
+		font-size: 1em;
+	}
+
+	#groepContact form {
+		display: none;
+	}
+	aside .fa:first-child {
+		margin-left: 30%;
+	}
+	aside .fa {
+		margin-top: 5%;
+		margin-right: 3%;
+		margin-left: 5%;
+	}
+	#gaToHome {
+		width: 5px;
+	}
+	footer {
+		width: 100%;
+		height: 10%;
+	}
+}
+
+
+
+@media (min-width: 741px) {
+	body {
+		padding: 0;
+	}
+	.navMenu {
+		margin-left: 38%;
+		margin-top: 1%;
+		height: 50px;
+
+	}
+	.navMenu li {
+		background: none;
+	}
+	.navMenu li a:active,
+	.navMenu li a:hover {
+		background: none;
+		color: #63364d;
+	}
+	.slide h1 {
+		font-size: 3.3em;
+		margin-top: 3%;
+	}
+	.slide h2 {
+		font-size: 3em;
+		margin-top: 3%;
+	}
+	.main h3 {
+		width: 100%;
+		margin: auto;
+		font-size: 2.3em;
+		margin-top: 1.5%;
+		border-bottom: 1px solid #fff;
+	}
+	.main p {
+		width: 100%;
+		margin: auto;
+		border-bottom: 1px solid #fff;
+		font-size: 1.2em;
+	}
+	aside img {
+		height: 43vh;
+		margin-top: 2%;
+	}
+	.arrow {
+		width: 30px;
+		height: 30px;
+
+	}
+	.assort {
+		width: 100%;
+		height: 100vh;
+	}
+	.offerte {
+		width: 80%;
+		height: auto;
+	}
+	.offerte img {
+		width: 80%;
+		display: flex;
+		align-content: center;
+		flex-direction: column;
+		margin-left: 10%;
+		box-shadow: 2px 3px 5px grey;
+	}
+	.assort h3 {
+		margin-top: 3%;
+	}
+	aside {
+		margin-left: 5%;
+	}
+	#gaToHome {
+		width: 100%;
+		margin-left: 90%;
+	}
+}
+
+
+
+@media (min-width: 830px) {
+	.navMenu {
+		margin-left: 40%;
+	}
+	.slide h1 {
+		font-size: ;
+	}
+
+}
+
+@media (min-width: 1024px) {
+	.navMenu {
+		margin-left: 40%;
+
+		text-align: center;
+		font-size: 1em;
+	}
+	.slide h1 {
+		font-size: 5em;
+		margin-top: 3%;
+	}
+	.slide h2 {
+		font-size: 4em;
+		margin-top: 3%;
+	}
+	#bloem img {
+		margin-bottom: 0%;
+	}
+	.main h3 {
+		max-width: 80%;
+		margin: auto;
+		margin-top: 2%;
+	}
+	.main p {
+		max-width: 80%;
+		margin: auto;
+		font-size: 1.2em;
+	}
+	.main img {
+		width: 100%;
+	}
+	#arrow2 {
+		bottom: 1%;
+	}
+	.grow {
+		display: flex;
+		height: 300px;
+		box-shadow: 2px 3px 5px grey;
+		overflow: hidden;
+		margin-left: 0;
+	}
+
+	.grow img {
+		display: flex;
+		width: 260px;
+		height: 300px;
+		transition: all 1s ease;
+		margin-left: 0;
+
+	}
+
+	.grow img:hover {
+		width: 290px;
+		height: 330px;
+	}
+
+}
+
+@media (min-width: 1440px) {
+	.navMenu {
+		margin-left: 50%;
+		height: 100px;
+		text-align: center;
+		font-size: 1.5em;
+	}
+	.slide h1 {
+		font-size: 7em;
+		margin-top: 3%;
+	}
+	.slide h2 {
+		font-size: 6em;
+		margin-top: 3%;
+	}
+	.main h3 {
+		max-width: 80%;
+		margin: auto;
+		font-size: 3em;
+		margin-top: 3%;
+	}
+	.main p {
+		max-width: 80%;
+		margin: auto;
+		font-size: 2em;
+	}
+	aside img {
+		margin-top: 2%;
+	}
+}
+
+
+
+
+@keyframes podmuch {
+
+	0% {
+		-webkit-transform: rotateX(-10deg);
+		-ms-transform: rotateX(-10deg);
+		transform: rotateX( -10deg);
+	}
+	25% {
+		-webkit-transform: rotateX(10deg);
+		-ms-transform: rotateX(10deg);
+		transform: rotateX( 10deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-7deg);
+		-ms-transform: rotateY(-7deg);
+		transform: rotateY( -7deg);
+	}
+	75% {
+		-webkit-transform: rotateX(5deg);
+		-ms-transform: rotateX(5deg);
+		transform: rotateX( 5deg);
+	}
+
+	100% {
+		-webkit-transform: rotateY(-3deg);
+		-ms-transform: rotateY(-3deg);
+		transform: rotateY( -3deg);
+	}
+
+}
+
+@keyframes arrow {
+	0% {
+		transform: translateY(-80px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(80px);
+	}
+}
+
+@keyframes effectZoom {
+	0% {
+		transform: scale(0, 0)
+	}
+	100% {
+		transform: scale(0.1, 0.1)
+	}
+}
